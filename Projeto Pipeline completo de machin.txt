@@ -1,0 +1,45 @@
+Projeto: Pipeline completo de machine learning
+
+Neste projeto, embarcamos em uma jornada de descoberta e aplicação de machine learning, com o objetivo de desenvolver modelos capazes de realizar tarefas supervisionadas ou não supervisionadas com alta precisão e eficiência.
+
+•	Seleção e Preparação de Dados (1pts): Encontre um conjunto de dados adequado para realizar tarefas de supervisionado (classificação ou regressão) ou não supervisionada. Realize a exploração de dados e o pré-processamento necessário para tornar os dados adequados para modelagem.
+
+•	Identificação da Melhor Configuração (2 pts): Teste pelo menos 2 modelos de machine learning adequados para resolver o problema em questão. Pode ser utilizado técnica GridSearch CV para otimizar hiperparâmetros importantes e encontrar o melhor modelo em questão. 
+
+•	Avaliação de Desempenho (2 pts): Avalie o desempenho do melhor modelo por meio de métricas apropriadas, dependendo do tipo de problema. Para classificação, as métricas podem incluir acurácia, precisão e F1-score, enquanto para regressão, podem incluir erro médio absoluto (MAE) e raiz do erro quadrático médio (RMSE). Para modelos não supervisionados, como k-means, DBSCAN ou métodos hierárquicos, pode ser utilizado o método do cotovelo para avaliar o desempenho do modelos de agrupamento.
+
+•	Integração com aplicação(2pts): Como um desafio, explore a criação de uma aplicação (web ou mobile) para que o melhor modelo treinado seja acessível através de uma API REST e utilizável por meio da aplicação. 
+
+•	Apresentação dos Resultados (3 pts): Preparar uma apresentação que aborde todos os passos realizados no projeto. Exibir gráficos e visualizações para ilustrar os resultados obtidos. Discutir os desafios enfrentados e as lições aprendidas durante o processo.
+
+Entregáveis:
+•	Código (pode ‘zipar’ para enviar): 7pts
+•	Apresentação: 3 pts
+Observações: 
+•	O trabalho deverá ser realizado em equipes de 4 até 6 pessoas.
+•	Em caso de detecção de plagio será zerada a nota do projeto final. 
+•	Não poderá ser utilizado datasets já apresentados sala de aula ou apresentado em projetos anteriores.
+•	A equipe será avaliada de forma individual (contando as aulas para desenvolvimento do projeto).
+
+
+
+>> Informações solicitadas
+Age	Gender		Weight (kg)	Height (m)
+Idade	Gênero		Peso (kg)	Altura (m)
+
+>> Informação apresentada
+Tipo de treino
+
+
+Idade	Gênero		Peso (kg)	Altura (m)	BPM máx.	BPM médio	BPM_em_descanso		Duração da sessão (horas)	Calorias_Queimadas	Tipo_de_treino		Porcentagem de gordura		Ingestão de água (litros)	Frequência de treino (dias/semana)	Nível de experiência		IMC
+
+Age	Gender		Weight (kg)	Height (m)	Max_BPM		Avg_BPM		Resting_BPM		Session_Duration (hours)	Calories_Burned		Workout_Type		Fat_Percentage			Water_Intake (liters)		Workout_Frequency (days/week)		Experience_Level		BMI
+
+
+
+>>> O que fazer <<<
+- processar as palavras para números - OK
+- escalonamento - OK
+- modelo classificação regressão linear - OK
+- erro médio absoluto (MAE) - OK
+- raiz do erro quadrático médio (RMSE) - OK
