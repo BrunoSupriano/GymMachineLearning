@@ -13,6 +13,8 @@ df = pd.read_csv(csv_file)
 encoder = LabelEncoder()
 df['Gender'] = encoder.fit_transform(df['Gender'])  # Male: 1, Female: 0
 
+print(df)
+
 # Selecionar colunas relevantes (features) e o target (Workout_Type)
 X = df[["Age", "Gender", "Weight (kg)", "Height (m)"]]
 y = df["Workout_Type"]
@@ -35,9 +37,9 @@ print(classification_report(y_test, y_pred))
 
 # Prever para novos dados fornecidos
 new_data = pd.DataFrame({
-    "Age": [40],
+    "Age": [60],
     "Gender": [encoder.transform(["Female"])[0]],  # Converter 'Female' para valor numérico
-    "Weight (kg)": [70],
+    "Weight (kg)": [130],
     "Height (m)": [1.60]
 })
 
