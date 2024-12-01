@@ -64,7 +64,10 @@ model = RandomForestClassifier(
 model.fit(X_train, y_train)
 
 # Streamlit App
-st.title("Gerador de Treinos 🏋️")
+st.markdown(
+    "<h1 style='text-align: center; color: #4CAF50;'>Gerador de Treinos 🏋️</h1>", 
+    unsafe_allow_html=True
+)
 
 # Layout de colunas
 col1, col2 = st.columns(2)
@@ -100,11 +103,16 @@ if gerar_treino:
 
     with col2:
         # Exibir resultados
-        # Streamlit App
-        st.title("Treino Recomendado")
-        st.markdown(f"**Tipo de treino recomendado:** {predicted_workout[0]}")
-        st.markdown(f"**IMC:** {bmi:.2f}")
-        st.markdown(f"**Freq. Cardíaca Média:** {frequencia_recomendada}")
+        st.markdown(
+            "<h1 style='text-align: center; color: #4CAF50;'>Treino Recomendado</h1>", 
+            unsafe_allow_html=True
+        )
+        st.markdown(f"<h2 style='text-align: center;'>Tipo de treino recomendado:</h2>", unsafe_allow_html=True)
+        st.markdown(f"<p style='text-align: center; font-size: 20px;'>{predicted_workout[0]}</p>", unsafe_allow_html=True)
+        st.markdown(f"<h2 style='text-align: center;'>IMC:</h2>", unsafe_allow_html=True)
+        st.markdown(f"<p style='text-align: center; font-size: 20px;'>{bmi:.2f}</p>", unsafe_allow_html=True)
+        st.markdown(f"<h2 style='text-align: center;'>Freq. Cardíaca Média:</h2>", unsafe_allow_html=True)
+        st.markdown(f"<p style='text-align: center; font-size: 20px;'>{frequencia_recomendada}</p>", unsafe_allow_html=True)
 
         # Calcular importância das features
         importances = model.feature_importances_
