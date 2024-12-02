@@ -22,10 +22,15 @@ def definir_avg_bpm(intensidade, genero):
         return 0
 
 # Carregar dados do arquivo CSV
-csv_file = "gym_members_exercise_tracking.csv"  # Substitua pelo caminho do seu arquivo
+csv_file = "../gym_members_exercise_tracking.csv"  # Substitua pelo caminho do seu arquivo
 df = pd.read_csv(csv_file)
 
 print(df.columns)
+
+# Classificar os valores de Workout_Type e contar as ocorrências de cada
+workout_type_counts = df['Workout_Type'].value_counts()
+print("Contagem de ocorrências de cada Workout_Type:")
+print(workout_type_counts)
 
 # Análise exploratória dos dados
 print("inicio")
